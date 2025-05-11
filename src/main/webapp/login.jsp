@@ -7,7 +7,7 @@ boolean valid = false;
 try {
     Class.forName("com.mysql.jdbc.Driver");
     Connection conn = DriverManager.getConnection(
-        "jdbc:mysql://localhost:3306/mysqlproject", "root", "Superstar0!26");
+        "jdbc:mysql://localhost:3306/flight_reservation_system", "root", "");
     PreparedStatement stmt = conn.prepareStatement(
         "SELECT * FROM Users WHERE username=? AND password=?");
     stmt.setString(1, username);
